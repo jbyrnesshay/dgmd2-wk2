@@ -115,11 +115,12 @@ footer {
 	float:left;
 	margin-left:4%;
 	min-height:1px;
+	/*height: 24em;*/
 	 
 }
 /* grid system */
 
-.col-1 {
+.col-1-2, .col-1-4 {
 	
 	width: 20%;
 	/*margin-left:4%;
@@ -176,10 +177,19 @@ footer {
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
 
-.col-1 {
-	width:44%;
-}
+	.col-1-2,.col-2 {
+		width:44%;
+		background:blaick;
+	}
+	.col-1-4,.col-3,.col-4 {
+		width: 92%;
+	}
 
 
 }
+@media only screen and (max-width: 479px) {
 
+  [class*="col-"] {
+  	width: 92%;
+  }
+}
