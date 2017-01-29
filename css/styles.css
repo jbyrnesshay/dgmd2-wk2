@@ -1,0 +1,185 @@
+/* Border box declaration */
+html {
+  box-sizing: border-box;
+}
+/* inherit border-box on all elements in the universe and before and after */
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: Arial, Geneva, sans-serif;
+	background-color: #B1D3EE;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Cabin Condensed', sans-serif;
+}
+a {
+	color: #2772B0;
+}
+.wrapper {
+
+	width: 75em;
+	width: 97%;
+	max-width: 75em;
+	margin: 0 auto;
+	float: none;
+	background-color: #fff;
+}
+header {
+	background: url(../img/boston-1200.jpg) no-repeat;
+	width: 75em;
+	width: 100%;
+	height: 13.625em;
+	font-family: 'Cabin Condensed', sans-serif; 
+	color: #fff;
+}
+header h1 {
+	padding: .5em;
+	margin: 0;
+}
+header h1 a {
+	color: #fff;
+	text-decoration: none;
+}
+nav {
+	background-color: #ED8F00;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: auto;
+}
+nav ul li {
+	font-family: 'Cabin Condensed', sans-serif;
+}
+nav ul a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 1em;
+	float: left;
+}
+nav ul a:hover {
+	color: #a16100;
+}
+main {
+	overflow: auto;
+	padding-right: 4em;
+	background-color: #EFECCA;
+}
+main h2 {
+	font-size: 3em;
+	padding-top: 1em;
+}
+main p {
+	font-size: 1.5em;
+	font-family: 'Cabin Condensed', sans-serif;
+}
+/*div {
+	float: left;
+	 
+	margin-left: 2.5em;  
+	width:20%;
+}*/
+div img {
+
+	width: 100%;
+	max-width: 225px;
+}
+main img {
+	float: left;
+	margin-right: 1.875em;
+	width: 100%;
+	max-width: 400px;
+}
+
+footer {
+	clear: both;
+	padding: 2em 0;
+	margin: 3em 0;
+	color: #999;
+	text-align: center;
+}
+
+
+[class*="col-"] {
+	float:left;
+	margin-left:4%;
+	min-height:1px;
+	 
+}
+/* grid system */
+
+.col-1 {
+	
+	width: 20%;
+	/*margin-left:4%;
+	/*ie hack,  if we have a box with nothing in it, IE has problemE "behaves badly" */
+	/*float: left;/*
+	/*min-height:1px;*/
+	background-color:#ccf;
+
+}
+
+/*snazz forumula for clearing float */
+.row::after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+.col-2 {
+	
+	width:44%;
+	/*
+	float:left;
+	margin-left: 4%;
+	min-height:1px;
+	*/
+	background-color:#cff;
+}
+
+
+
+.col-3 {
+	
+	width:68%;
+	/*
+	margin-left:4%;
+	min-height:1px;
+	float:left;
+	*/
+	background-color:#ffc;
+}
+
+.col-4 {
+	 
+	width: 92%;
+
+	/*
+	margin-left:4%;
+	min-height:1px;
+	*/
+	background-color:#fcf;
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+.col-1 {
+	width:44%;
+}
+
+
+}
+
